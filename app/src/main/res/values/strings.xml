@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Android App</string>
+    <string name="app_name"><i>PayForward</i></string>
+    <string name="app_description">Powered by People</string>
 </resources>
