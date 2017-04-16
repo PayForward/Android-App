@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name"><i>Payit Forward</i></string>
     <string name="app_description">Communities Powered by People</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
+    
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
