@@ -10,10 +10,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".IntroPageActivity">
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".IntroPageActivity"></activity>
+        <activity
+            android:name=".SetLocationActivity"
+            android:label="@string/title_activity_set_location"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
