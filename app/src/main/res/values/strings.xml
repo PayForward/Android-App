@@ -11,5 +11,8 @@
     <string name="location_title2">or</string>
     <string name="current_location">Use Current Location</string>
     <string name="zipcode">Enter Zipcode</string>
+    <string name="sign_up_helper">Who are you signing up?</string>
+    <string name="myself_button">Myself</string>
+    <string name="business_button">A Business or Organization</string>
 
 </resources>
