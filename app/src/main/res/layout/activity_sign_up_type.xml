@@ -46,7 +46,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="@color/white"
-        android:onClick="nextScreen"
+        android:onClick="comingSoon"
         android:text="@string/business_button"
         android:textAllCaps="false" />
 </RelativeLayout>
