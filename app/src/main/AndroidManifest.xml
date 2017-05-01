@@ -20,7 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpNameActivity"></activity>
+        <activity android:name=".SignUpNameActivity" />
+        <activity android:name=".Post.PostTypeActivity"></activity>
     </application>
 
 </manifest>
