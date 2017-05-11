@@ -57,4 +57,5 @@
         android:layout_below="@+id/request_button"
         android:layout_marginTop="15dp"
         android:text="@string/request_text" />
+
 </RelativeLayout>
