@@ -35,7 +35,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
-        android:text="@string/current_location"
+        android:text="@string/location_title1"
         android:textColor="@color/white" />
 
     <TextView

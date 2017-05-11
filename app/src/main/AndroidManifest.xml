@@ -9,7 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MainActivity" />
-        <activity android:name=".IntroPageActivity" />
         <activity
             android:name=".SetLocationActivity"
             android:label="@string/title_activity_set_location" />
@@ -21,7 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpNameActivity" />
+
+        <activity android:name=".Description"></activity>
+
         <activity android:name=".Post.PostTypeActivity"></activity>
+
     </application>
 
 </manifest>

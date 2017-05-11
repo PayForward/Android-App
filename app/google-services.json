@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "853769183318",
+    "firebase_url": "https://payitforward-781cb.firebaseio.com",
+    "project_id": "payitforward-781cb",
+    "storage_bucket": "payitforward-781cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853769183318:android:7b28d1ec47dc2188",
+        "android_client_info": {
+          "package_name": "com.payforward.androidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853769183318-76j4h42kib7ca6vvvhiqguu4bmijp6rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_WoEdWFMj8d925RUsAogwkYyXl7WUcXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
