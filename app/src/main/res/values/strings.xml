@@ -19,9 +19,17 @@
     <string name="sign_up_first_name">First Name</string>
     <string name="sign_up_last_name">Last Name</string>
     <string name="next_button">Next</string>
+<<<<<<< HEAD
     <string name="title_activity_intropage">intropage</string>
     <string name="title_activity_previewscreens">previewscreens</string>
     <string name="desc">Tell us About You</string>
     <string name="describe">Briefly describe your interests, talents, ambitions, and anything else you want to share with the community</string>
     <string name="char_count">Characters Left:</string>
+=======
+    <string name="offer_button"><b>Offer a Service</b></string>
+    <string name="offer_text"><b>An Offer is a service that you are offering to the community in exchange for their points.</b></string>
+    <string name="request_button"><b>Request a Service</b></string>
+    <string name="request_text"><b>A Request is a way of asking your community for a service that you need in exchange for your points.</b></string>
+
+>>>>>>> 6ac8cdec0768fe3d72711a291c0e63548c6af3ff
 </resources>

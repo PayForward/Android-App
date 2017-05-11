@@ -6,4 +6,6 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="offer_red">#CC2936</color>
+    <color name="request_green">#1C7C54</color>
 </resources>

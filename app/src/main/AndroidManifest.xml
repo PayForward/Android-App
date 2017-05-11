@@ -20,11 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpNameActivity" />
-        <activity
-            android:name=".previewscreens"
-            android:label="@string/title_activity_previewscreens"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".Description"></activity>
+
+        <activity android:name=".Post.PostTypeActivity"></activity>
+
     </application>
 
 </manifest>
