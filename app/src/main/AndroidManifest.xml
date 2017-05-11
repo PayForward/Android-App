@@ -9,7 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MainActivity" />
-        <activity android:name=".IntroPageActivity" />
         <activity
             android:name=".SetLocationActivity"
             android:label="@string/title_activity_set_location" />
@@ -20,7 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpNameActivity"></activity>
+        <activity android:name=".SignUpNameActivity" />
+        <activity
+            android:name=".previewscreens"
+            android:label="@string/title_activity_previewscreens"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Description"></activity>
     </application>
 
 </manifest>

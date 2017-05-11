@@ -19,7 +19,8 @@ public class SignUpTypeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void comingSoon(View view) {
-        Toast.makeText(this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+    public void nextScreen2(View view) {
+        Intent intent = new Intent(this, BusinessContactUsActivity.class);
+        startActivity(intent);
     }
 }
