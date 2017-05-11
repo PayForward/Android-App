@@ -28,5 +28,8 @@
     <string name="offer_text"><b>An Offer is a service that you are offering to the community in exchange for their points.</b></string>
     <string name="request_button"><b>Request a Service</b></string>
     <string name="request_text"><b>A Request is a way of asking your community for a service that you need in exchange for your points.</b></string>
-    
+    <string name="select_category">Select a Category</string>
+    <string name="art_photography_design">Art, Photography, Design</string>
+    <string name="architecture_printing_crafts">Architecture, Printing, Crafts</string>
+
 </resources>
