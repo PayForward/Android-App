@@ -38,6 +38,14 @@ public class CategoryActivity extends AppCompatActivity {
         categoryList.add(new Category("Hello!", "This is a description"));
         categoryList.add(new Category("Hello!", "This is a description 2"));
         categoryList.add(new Category("Hello World!", "This is a description"));
+        categoryList.add(new Category("What's up?", "Blah Blah"));
+        categoryList.add(new Category("Hello!", "This is a description"));
+        categoryList.add(new Category("Hello!", "This is a description 2"));
+        categoryList.add(new Category("Hello World!", "This is a description"));
+        categoryList.add(new Category("What's up?", "Blah Blah"));
+        categoryList.add(new Category("Hello!", "This is a description"));
+        categoryList.add(new Category("Hello!", "This is a description 2"));
+        categoryList.add(new Category("Hello World!", "This is a description"));
 
         for (Category category : categoryList) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
