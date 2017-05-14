@@ -11,9 +11,6 @@
         style="@style/PostHelperText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
         android:text="@string/select_category" />
 
     <ListView
@@ -22,6 +19,12 @@
         android:layout_height="match_parent"
         android:layout_below="@id/select_category"
         android:divider="@android:color/transparent"
-        android:dividerHeight="10.0sp"></ListView>
+        android:dividerHeight="10.0sp"
+        android:paddingEnd="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingStart="30dp">
+
+    </ListView>
 
 </RelativeLayout>

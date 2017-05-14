@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="active_icon">#3E9EA7</color>
+    <!-- Also used for shadows -->
     <color name="inactive_icon">#C1BEB8</color>
-
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+
     <color name="background">#F7F5F3</color>
     <color name="text">#545454</color>
     <color name="offer_red">#CC2936</color>
