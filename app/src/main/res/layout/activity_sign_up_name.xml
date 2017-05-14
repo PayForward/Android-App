@@ -64,7 +64,7 @@
         android:background="@color/white"
         android:text="@string/next_button"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/active_icon"
         android:layout_below="@+id/sign_up_number"
         android:layout_alignLeft="@+id/sign_up_number"
         android:layout_alignStart="@+id/sign_up_number"

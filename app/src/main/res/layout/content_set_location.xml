@@ -34,7 +34,7 @@
         android:layout_marginRight="40dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/active_icon"
         android:text="@string/location_title1"
         android:textColor="@color/white" />
 

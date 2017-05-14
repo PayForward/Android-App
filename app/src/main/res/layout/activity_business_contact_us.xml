@@ -70,6 +70,6 @@
         android:background="@color/white"
         android:text="@string/next_button"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/active_icon" />
 
 </RelativeLayout>
