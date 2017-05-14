@@ -1,7 +1,12 @@
 package com.payforward.androidapp.Post;
 
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
+import android.support.annotation.IntRange;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 /**
  * @author Eitan created on 5/11/2017.
@@ -10,17 +15,22 @@ import android.media.Image;
 class Category {
 
     // Instance Variables
-    private final int id;
+    private int id;  // Should be final
     private String description;
     private String helper;
     private Drawable image;
 
-    // Constructor
+    // Constructors
     public Category(int ID, String description, String helper, Drawable image) {
         id = ID;
         this.description = description;
         this.helper = helper;
         this.image = image;
+    }
+
+    public Category(String description, String helper) {
+        this.description = description;
+        this.helper = helper;
     }
 
 

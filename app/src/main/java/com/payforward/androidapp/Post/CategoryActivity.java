@@ -1,42 +1,62 @@
 package com.payforward.androidapp.Post;
 
 import android.content.Context;
+import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.payforward.androidapp.R;
 
 import java.util.ArrayList;
 
+import static com.payforward.androidapp.R.layout.category;
+
 public class CategoryActivity extends AppCompatActivity {
 
     private CustomAdapter mAdapter;
+    private ListView mTaskListView;
+    private ArrayList<Category> categoryList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+
+        mTaskListView = (ListView) findViewById(R.id.category_list_view);
+        categoryList = new ArrayList<>();
+
+        categoryList.add(new Category("What's up?", "Blah Blah"));
+        categoryList.add(new Category("Hello!", "This is a description"));
+        categoryList.add(new Category("Hello!", "This is a description 2"));
+        categoryList.add(new Category("Hello World!", "This is a description"));
+
+        for (Category category : categoryList) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                category.setImage(getDrawable(R.drawable.art_category));
+            }
+        }
+
+        updateUI();
     }
 
     private void updateUI() {
-        ArrayList<> taskList = .getToDoList();
-
         if (mAdapter == null) {
             mAdapter = new CustomAdapter<>(this,
-                    task, // What view to use for the items
-                    taskList); // Where to get the data
+                    category, // What view to use for the items
+                    categoryList); // Where to get the data
             mTaskListView.setAdapter(mAdapter);
         } else {
             mAdapter.clear();
-            mAdapter.addAll(taskList);
+            mAdapter.addAll(categoryList);
             mAdapter.notifyDataSetChanged();
         }
     }
@@ -59,7 +79,7 @@ public class CategoryActivity extends AppCompatActivity {
             ViewHolder holder;
             if (convertView == null) {
                 holder = new ViewHolder();
-                convertView = inflater.inflate(R.layout.category, parent, false);
+                convertView = inflater.inflate(category, parent, false);
                 holder.description = (TextView) convertView.findViewById(R.id.category_name);
                 holder.helper = (TextView) convertView.findViewById(R.id.category_helper);
                 holder.image = (ImageView) convertView.findViewById(R.id.artImage);
