@@ -9,10 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.payforward.androidapp.R;
 
@@ -22,8 +24,8 @@ import static com.payforward.androidapp.R.layout.category;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    private CustomAdapter mAdapter;
-    private ListView mTaskListView;
+    private CustomAdapter<Category> mAdapter;
+    private ListView mCategoryList;
     private ArrayList<Category> categoryList;
 
     @Override
@@ -31,7 +33,16 @@ public class CategoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
-        mTaskListView = (ListView) findViewById(R.id.category_list_view);
+        mCategoryList = (ListView) findViewById(R.id.category_list_view);
+
+        mCategoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                // mAdapter.getItem(i) gets the Category at the current position
+                Toast.makeText(getApplicationContext(), mAdapter.getItem(i).getDescription(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
         categoryList = new ArrayList<>();
 
         categoryList.add(new Category("What's up?", "Blah Blah"));
@@ -61,7 +72,7 @@ public class CategoryActivity extends AppCompatActivity {
             mAdapter = new CustomAdapter<>(this,
                     category, // What view to use for the items
                     categoryList); // Where to get the data
-            mTaskListView.setAdapter(mAdapter);
+            mCategoryList.setAdapter(mAdapter);
         } else {
             mAdapter.clear();
             mAdapter.addAll(categoryList);
