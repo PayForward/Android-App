@@ -12,18 +12,18 @@
         <activity
             android:name=".SetLocationActivity"
             android:label="@string/title_activity_set_location" />
-        <activity android:name=".SignUpTypeActivity"></activity>
+        <activity android:name=".SignUpTypeActivity" />
         <activity android:name=".SignUpNameActivity" />
         <activity android:name=".Description" />
-        <activity android:name=".Post.PostTypeActivity" />
-        <activity android:name=".Post.CategoryActivity">
+        <activity android:name=".post.PostTypeActivity" />
+        <activity android:name=".post.CategoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Post.SubCategoryActivity"></activity>
+        <activity android:name=".post.SubCategoryActivity" />
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
-package com.payforward.androidapp.Post;
+package com.payforward.androidapp.post;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,7 +15,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.payforward.androidapp.R;
 
@@ -39,7 +39,7 @@ public class CategoryActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 // mAdapter.getItem(i) gets the Category at the current position
-                Toast.makeText(getApplicationContext(), mAdapter.getItem(i).getDescription(), Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(CategoryActivity.this, SubCategoryActivity.class));
             }
         });
 

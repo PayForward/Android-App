@@ -1,10 +1,10 @@
-package com.payforward.androidapp.Post;
+package com.payforward.androidapp.post;
 
 /**
  * @author Eitan created on 5/16/2017.
  */
 
-class SubCategory {
+class SubCategory implements CategoryInterface {
     // Instance Variables
     private int id;  // Should be final
     private String description;

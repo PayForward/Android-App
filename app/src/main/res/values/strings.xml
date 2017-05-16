@@ -31,5 +31,7 @@
     <string name="select_category">Select a Category</string>
     <string name="art_photography_design">Art, Photography, Design</string>
     <string name="architecture_printing_crafts">Architecture, Printing, Crafts</string>
+    <string name="carpet_cleaning">Carpet cleaning</string>
+    <string name="select_subcategory">Select a Subcategory(s)</string>
 
 </resources>

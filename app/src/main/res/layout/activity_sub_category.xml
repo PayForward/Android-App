@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.payforward.androidapp.Post.SubCategoryActivity">
+    tools:context="com.payforward.androidapp.post.SubCategoryActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/select_subcategory"
+        style="@style/PostHelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_subcategory" />
+
+    <ListView
+        android:id="@+id/subcategory_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/select_subcategory"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:paddingEnd="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingStart="30dp">
+
+    </ListView>
+
+</RelativeLayout>

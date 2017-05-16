@@ -1,18 +1,12 @@
-package com.payforward.androidapp.Post;
+package com.payforward.androidapp.post;
 
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 /**
  * @author Eitan created on 5/11/2017.
  */
 
-class Category {
+class Category implements CategoryInterface {
 
     // Instance Variables
     private int id;  // Should be final
