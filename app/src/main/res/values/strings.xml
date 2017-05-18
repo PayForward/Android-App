@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"><i>Payit Forward</i></string>
+    <string name="app_name">PayForward</string>
     <string name="app_description">Communities Powered by People</string>
 
     <!-- IntroPageFragment strings -->
