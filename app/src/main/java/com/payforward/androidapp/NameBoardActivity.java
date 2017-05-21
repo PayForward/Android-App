@@ -24,7 +24,7 @@ public class NameBoardActivity extends AppCompatActivity {
     }
     public void newActivity(View view)
     {
-        Intent intent = new Intent(this, Description.class);
+        Intent intent = new Intent(this, DescriptionActivity.class);
         startActivity(intent);
     }
 }

@@ -11,4 +11,6 @@
     <color name="text">#545454</color>
     <color name="offer_red">#CC2936</color>
     <color name="request_green">#1C7C54</color>
+    <color name="fb_blue">#4A5DB8</color>
+    <color name="input_background">#BDEDEF</color>
 </resources>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
     tools:context="com.payforward.androidapp.createAccountActivity">
@@ -24,10 +25,10 @@
         android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/text_createaccount"
         android:layout_below="@+id/progressBar4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:text="@string/text_createaccount" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/button"
@@ -35,42 +36,58 @@
         android:minWidth="350dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white"
         android:text="@string/button_login_fb"
+        android:drawableLeft="@drawable/fblogo"
+        android:background="@color/fb_blue"
         android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:textSize="20dp"
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="11dp"
         android:text="@string/text_or"
         android:layout_below="@+id/button"
         android:layout_centerHorizontal="true" />
 
     <EditText
+        style="@style/Input_board"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="65dp"
         android:hint="@string/hint_email"
         android:maxLines="1"
         android:textColor="@color/white"
-        android:background="@android:color/transparent"
+        android:background="@color/input_background"
         android:id="@+id/editText"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
     <EditText
+        style="@style/Input_board"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="65dp"
         android:hint="@string/hint_password"
         android:maxLines="1"
-        android:textColor="@color/white"
-        android:layout_marginTop="26dp"
-        android:background="@android:color/transparent"
+        android:layout_marginTop="18dp"
+        android:id="@+id/editText2"
         android:layout_below="@+id/editText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+    <android.support.design.widget.FloatingActionButton
+        style="@style/Float_Button_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="newActivity">
+    </android.support.design.widget.FloatingActionButton>
 
 </RelativeLayout>
