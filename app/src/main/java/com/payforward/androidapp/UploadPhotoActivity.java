@@ -16,7 +16,7 @@ public class UploadPhotoActivity extends AppCompatActivity {
     }
     public void newActivity(View view)
     {
-//        Intent intent = new Intent(this, CategoryActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
     }
 }
