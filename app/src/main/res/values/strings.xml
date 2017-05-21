@@ -33,5 +33,23 @@
     <string name="architecture_printing_crafts">Architecture, Printing, Crafts</string>
     <string name="carpet_cleaning">Carpet cleaning</string>
     <string name="select_subcategory">Select a Subcategory(s)</string>
+    <string name="title_activity_name_board">NameBoard</string>
+    <string name="terms_title">Terms of Service</string>
+    <string name="const_overview">Overview: </string>
+    <string name="accept">I Accept</string>
+    <string name="not_accept">I do not accept</string>
+    <string name="text_createaccount">Create an Account</string>
+    <string name="button_login_fb">Login with Facebook</string>
+    <string name="text_or">- or -</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="text_verifymember">Verify that you\'re a New Member</string>
+    <string name="hint_phonenumber">Phone Number</string>
+    <string name="text_number_not_shared"><italic>Your number will not be shared, it will only be used to verify that your account is unique</italic></string>
+    <string name="text_verificationCode">Enter the Verification Code you received</string>
+    <string name="hint_verificationCode">Verification Code</string>
+    <string name="button_send_verification">Send Verification Again</string>
+    <string name="hint_about">About</string>
+    <string name="text_upload_photo">Upload a Recent Photo</string>
 
 </resources>

@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.payforward.androidapp.previewscreens">
+    tools:context="com.payforward.androidapp.PreviewScreensActivity">
+    android:id="@id/root_layout"
+    <!--<fragment-->
+        <!--class="com.payforward.androidapp.IntroPageFragment"-->
+        <!--android:id="@+id/preview_fragment"-->
+        <!--android:layout_height="439dp"-->
+        <!--android:layout_width="0dp" />-->
 
-    <android.support.design.widget.AppBarLayout
+    <!--<include layout="@layout/content_previewscreens" />-->
+
+    <fragment
+        android:id="@+id/preview_fragment"
+        android:name="com.payforward.androidapp.IntroPageFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_intro_page" />
+    <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--tools:layout="@layout/fragment_intro_page" />-->
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_previewscreens" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
