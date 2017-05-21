@@ -19,14 +19,13 @@
         <activity android:name=".post.SubCategoryActivity" />
         <activity android:name=".NameBoardActivity" />
         <activity
-            android:name=".termsActivity"
-            android:label="@string/title_activity_name_board" />
-        <activity android:name=".createAccountActivity">
+            android:name=".termsActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".createAccountActivity"/>
 
         <activity android:name=".verifyMemberActivity" />
         <activity android:name=".verificationCodeActivity" />
