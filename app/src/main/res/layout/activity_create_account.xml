@@ -57,29 +57,32 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
+        android:id="@+id/editText"
         style="@style/Input_board"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:hint="@string/hint_email"
-        android:maxLines="1"
-        android:textColor="@color/white"
-        android:background="@color/input_background"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp" />
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="10dp"
+        android:background="@color/input_background"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="@color/white" />
+
     <EditText
+        android:id="@+id/editText2"
         style="@style/Input_board"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:hint="@string/hint_password"
-        android:maxLines="1"
-        android:layout_marginTop="18dp"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="18dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:maxLines="1" />
     <android.support.design.widget.FloatingActionButton
         style="@style/Float_Button_board"
         android:layout_width="wrap_content"
