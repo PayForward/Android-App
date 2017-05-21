@@ -5,6 +5,6 @@ package com.payforward.androidapp.post;
  */
 
 interface CategoryInterface {
-    String getDescription();
-    void setDescription(String description);
+    String getTitle();
+    void setTitle(String title);
 }

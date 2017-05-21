@@ -12,12 +12,11 @@
         android:background="@color/white">
 
         <ImageView
-            android:id="@+id/artImage"
+            android:id="@+id/image"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="7dp"
-            android:contentDescription="This is art"
             android:src="@drawable/art_category"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -25,29 +24,28 @@
             tools:layout_constraintTop_creator="1" />
 
         <TextView
-            android:id="@+id/category_name"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:text="@string/art_photography_design"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintLeft_toRightOf="@+id/artImage"
+            app:layout_constraintLeft_toRightOf="@+id/image"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintTop_creator="1" />
 
         <TextView
-            android:id="@+id/category_helper"
+            android:id="@+id/subTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/architecture_printing_crafts"
             android:textSize="12sp"
             android:textStyle="italic"
-            app:layout_constraintLeft_toLeftOf="@+id/category_name"
-            app:layout_constraintTop_toBottomOf="@+id/category_name"
+            app:layout_constraintLeft_toLeftOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title"
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintTop_creator="1" />
     </android.support.constraint.ConstraintLayout>

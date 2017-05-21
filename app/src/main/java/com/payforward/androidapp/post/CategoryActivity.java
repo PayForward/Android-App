@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,9 +17,15 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.payforward.androidapp.R;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 import static com.payforward.androidapp.R.layout.category;
 
@@ -27,12 +34,15 @@ public class CategoryActivity extends AppCompatActivity {
     private CustomAdapter<Category> mAdapter;
     private ListView mCategoryList;
     private ArrayList<Category> categoryList;
+    private DatabaseReference mDatabase;
+    private final String TAG = "CategoryActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference();
         mCategoryList = (ListView) findViewById(R.id.category_list_view);
 
         mCategoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -44,25 +54,22 @@ public class CategoryActivity extends AppCompatActivity {
         });
 
         categoryList = new ArrayList<>();
+        DatabaseReference ref = mDatabase.child("categories");
 
-        categoryList.add(new Category("What's up?", "Blah Blah"));
-        categoryList.add(new Category("Hello!", "This is a description"));
-        categoryList.add(new Category("Hello!", "This is a description 2"));
-        categoryList.add(new Category("Hello World!", "This is a description"));
-        categoryList.add(new Category("What's up?", "Blah Blah"));
-        categoryList.add(new Category("Hello!", "This is a description"));
-        categoryList.add(new Category("Hello!", "This is a description 2"));
-        categoryList.add(new Category("Hello World!", "This is a description"));
-        categoryList.add(new Category("What's up?", "Blah Blah"));
-        categoryList.add(new Category("Hello!", "This is a description"));
-        categoryList.add(new Category("Hello!", "This is a description 2"));
-        categoryList.add(new Category("Hello World!", "This is a description"));
-
-        for (Category category : categoryList) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                category.setImage(getDrawable(R.drawable.art_category));
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Map<String, Object> newCategory = (Map<String, Object>) snapshot.getValue();
+                    categoryList.add(new Category((String) newCategory.get("title"), (String) newCategory.get("subTitle")));
+                }
             }
-        }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         updateUI();
     }
@@ -99,22 +106,22 @@ public class CategoryActivity extends AppCompatActivity {
             if (convertView == null) {
                 holder = new ViewHolder();
                 convertView = inflater.inflate(category, parent, false);
-                holder.description = (TextView) convertView.findViewById(R.id.category_name);
-                holder.helper = (TextView) convertView.findViewById(R.id.category_helper);
-                holder.image = (ImageView) convertView.findViewById(R.id.artImage);
+                holder.title = (TextView) convertView.findViewById(R.id.title);
+                holder.subTitle = (TextView) convertView.findViewById(R.id.subTitle);
+                holder.image = (ImageView) convertView.findViewById(R.id.image);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
-            holder.description.setText(((Category) objects.get(position)).getDescription());
-            holder.helper.setText(((Category) objects.get(position)).getHelper());
+            holder.title.setText(((Category) objects.get(position)).getTitle());
+            holder.subTitle.setText(((Category) objects.get(position)).getSubTitle());
             holder.image.setImageDrawable(((Category) objects.get(position)).getImage());
 
             return convertView;
         }
 
         private class ViewHolder {
-            private TextView description, helper;
+            private TextView title, subTitle;
             private ImageView image;
         }
     }
