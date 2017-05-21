@@ -36,6 +36,7 @@
         android:layout_height="65dp"
         android:hint="@string/hint_phonenumber"
         android:maxLines="1"
+        android:inputType="phone"
         android:id="@+id/editText"
         android:layout_marginTop="25dp"
         android:layout_below="@+id/textView8"
