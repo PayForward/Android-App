@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    tools:context="com.payforward.androidapp.Description">
+    tools:context="com.payforward.androidapp.DescriptionActivity">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="16dp" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"

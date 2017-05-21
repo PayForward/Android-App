@@ -6,10 +6,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    tools:context="com.payforward.androidapp.verificationCodeActivity">
+    tools:context="com.payforward.androidapp.whereHomeActivity">
 
     <ProgressBar
-        android:id="@+id/progressBar6"
+        android:id="@+id/progressBar10"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,54 +23,43 @@
         android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/text_verificationCode"
-        android:layout_below="@+id/progressBar6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="23dp"
+        android:text="@string/text_where_home"
+        android:layout_below="@+id/progressBar10"
+        android:layout_centerHorizontal="true" />
     <EditText
         style="@style/Input_board"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:hint="@string/hint_verificationCode"
+        android:hint="@string/hint_enter_address"
         android:maxLines="1"
         android:id="@+id/editText"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="28dp"
         android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <!--<Button-->
-        <!--android:id="@+id/button"-->
-        <!--android:minHeight="65dp"-->
-        <!--android:minWidth="350dp"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="26dp"-->
-        <!--android:text="@string/button_send_verification"-->
-        <!--android:layout_below="@+id/editText"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true" />-->
-
+    <Button
+        android:id="@+id/offer_button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:text="@string/button_current_loc"
+        android:textColor="@color/black"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <android.support.design.widget.FloatingActionButton
         style="@style/Float_Button_board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:fabSize="normal"
-        android:onClick="newActivity">
+        android:onClick="newActivity"
+        android:id="@+id/floatingActionButton">
     </android.support.design.widget.FloatingActionButton>
 
-    <TextView
-        android:id="@+id/textView7"
-        android:text="@string/text_didnt_receive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:onClick="newActivity"/>
 
 </RelativeLayout>

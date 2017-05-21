@@ -72,5 +72,8 @@ If you do not agree with all of the provisions of this agreement, do not access 
 Illegal acts are still illegal even on this site. Therefore, do not initiate or enter into any illegal transcations.
 
 In summary: Treat others as you would like to be treated. We are setting up a system that rewards generosity and giving, so be kind, have fun, use common sense, and use PayForward at your own risk.</string>
-
+    <string name="text_didnt_receive">I didn\'t receive a text</string>
+    <string name="text_where_home">Where\'s Home?</string>
+    <string name="hint_enter_address">Enter Address</string>
+    <string name="button_current_loc">Use Current Location</string>
 </resources>

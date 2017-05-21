@@ -8,17 +8,18 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import static android.R.id.progress;
 
 public class NameBoardActivity extends AppCompatActivity {
-    private ProgressDialog progress;
+    private ProgressBar progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name_board);
-        progress = new ProgressDialog(this);
+        progress = new ProgressBar(this);
         progress.setProgress(50);
 
     }
