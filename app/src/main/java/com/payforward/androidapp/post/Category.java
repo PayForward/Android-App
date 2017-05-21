@@ -9,39 +9,37 @@ import android.graphics.drawable.Drawable;
 class Category implements CategoryInterface {
 
     // Instance Variables
-    private int id;  // Should be final
-    private String description;
-    private String helper;
+    private String title;
+    private String subTitle;
     private Drawable image;
 
     // Constructors
-    public Category(int ID, String description, String helper, Drawable image) {
-        id = ID;
-        this.description = description;
-        this.helper = helper;
+    public Category(String title, String subTitle, Drawable image) {
+        this.title = title;
+        this.subTitle = subTitle;
         this.image = image;
     }
 
-    public Category(String description, String helper) {
-        this.description = description;
-        this.helper = helper;
+    public Category(String title, String subTitle) {
+        this.title = title;
+        this.subTitle = subTitle;
     }
 
-
-    public String getDescription() {
-        return description;
+    // Methods
+    public String getTitle() {
+        return title;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getHelper() {
-        return helper;
+    public String getSubTitle() {
+        return subTitle;
     }
 
-    public void setHelper(String helper) {
-        this.helper = helper;
+    public void setSubTitle(String subTitle) {
+        this.subTitle = subTitle;
     }
 
     public Drawable getImage() {

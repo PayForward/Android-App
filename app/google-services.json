@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "853769183318-bgg9r857f9s23i5du106lcacvcnb96ao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.payforward.androidapp",
+            "certificate_hash": "61db160fe2df2acd6b4ddbf6d9ad40b04d75892b"
+          }
+        },
+        {
           "client_id": "853769183318-76j4h42kib7ca6vvvhiqguu4bmijp6rn.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,20 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853769183318-g4ciffa7loj14b98ioo29lh54lp2rt0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.payitforward.PayItForward"
+              }
+            },
+            {
+              "client_id": "853769183318-76j4h42kib7ca6vvvhiqguu4bmijp6rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

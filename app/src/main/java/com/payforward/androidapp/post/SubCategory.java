@@ -6,24 +6,20 @@ package com.payforward.androidapp.post;
 
 class SubCategory implements CategoryInterface {
     // Instance Variables
-    private int id;  // Should be final
-    private String description;
+    private String title;
 
     // Constructors
-    public SubCategory(int ID, String description) {
-        id = ID;
-        this.description = description;
+    public SubCategory(String title) {
+        this.title = title;
     }
 
-    public SubCategory(String description) {
-        this.description = description;
+    @Override
+    public String getTitle() {
+        return title;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    @Override
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

@@ -37,7 +37,7 @@ public class SubCategoryActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 // mAdapter.getItem(i) gets the Category at the current position
-                Toast.makeText(getApplicationContext(), mAdapter.getItem(i).getDescription(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), mAdapter.getItem(i).getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -91,18 +91,18 @@ public class SubCategoryActivity extends AppCompatActivity {
             if (convertView == null) {
                 holder = new ViewHolder();
                 convertView = inflater.inflate(subcategory, parent, false);
-                holder.description = (TextView) convertView.findViewById(R.id.subcategory_name);
+                holder.title = (TextView) convertView.findViewById(R.id.subcategory_name);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
-            holder.description.setText(((SubCategory) objects.get(position)).getDescription());
+            holder.title.setText(((SubCategory) objects.get(position)).getTitle());
 
             return convertView;
         }
 
         private class ViewHolder {
-            private TextView description;
+            private TextView title;
         }
     }
 }
