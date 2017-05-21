@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
     tools:context="com.payforward.androidapp.createAccountActivity">
@@ -13,48 +13,48 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView8"
-        android:textStyle="bold"
-        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar4"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
         android:text="@string/text_createaccount"
-        android:layout_below="@+id/progressBar4"
-        android:layout_centerHorizontal="true" />
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button"
-        android:minHeight="65dp"
-        android:minWidth="350dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="left|center_vertical"
-        android:textColor="@color/white"
-        android:text="@string/button_login_fb"
-        android:drawableLeft="@drawable/fblogo"
-        android:background="@color/fb_blue"
-        android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="30dp"
+        android:background="@color/fb_blue"
+        android:drawableLeft="@drawable/fblogo"
+        android:gravity="left|center_vertical"
+        android:minHeight="65dp"
+        android:minWidth="350dp"
+        android:text="@string/button_login_fb"
+        android:textColor="@color/white" />
 
     <TextView
-        android:textSize="20dp"
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
         android:text="@string/text_or"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -82,14 +82,14 @@
         android:hint="@string/hint_password"
         android:inputType="textPassword"
         android:maxLines="1" />
+
     <android.support.design.widget.FloatingActionButton
         style="@style/Float_Button_board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fabSize="normal"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="newActivity">
-    </android.support.design.widget.FloatingActionButton>
+        android:layout_alignParentRight="true"
+        android:onClick="newActivity"
+        app:fabSize="normal"></android.support.design.widget.FloatingActionButton>
 
 </RelativeLayout>
