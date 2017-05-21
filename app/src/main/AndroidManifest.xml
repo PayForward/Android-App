@@ -25,12 +25,19 @@
         <activity
             android:name=".termsActivity"
             android:label="@string/title_activity_name_board" />
-        <activity android:name=".createAccountActivity">
-        </activity>
+        <activity android:name=".createAccountActivity" />
+
         <activity android:name=".verifyMemberActivity" />
         <activity android:name=".verificationCodeActivity" />
         <activity android:name=".UploadPhotoActivity" />
-        <activity android:name=".post.DescribeOfferActivity"></activity>
+        <activity android:name=".post.DescribeOfferActivity" />
+        <activity android:name=".whereHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

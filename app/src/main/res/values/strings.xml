@@ -51,5 +51,29 @@
     <string name="button_send_verification">Send Verification Again</string>
     <string name="hint_about">About</string>
     <string name="text_upload_photo">Upload a Recent Photo</string>
+    <string name="text_terms">Our mission is to help people make meaningful, face-to-face connections while sharing their skills and talents with each other.
 
+In legal terms, PayForward provides a neutral platform through which you can give and receive, but you need to understand the following:
+
+You may not access or use PayForward if you are under 18 years old.
+
+All transactions are between the parties using PayForward. PayForward is not involved in any way and thus everything you do is at your own risk. You should always use caution and common sense when entering into a transaction and inspect each community member before you interact with them.
+
+Services provided through PayForward are not guaranteed, warranted or insured. PayForward does not do background checks or verify licenses.
+
+Many jurisdictions have law protecting consumers and other contract parties, limiting their ability to waive certain rights and responsibilities. We respect such laws; nothing herein shall waive rights or responsiblities that cannot be waived.
+
+We are not liable for any harm resulting from user content, user conduct, e.g. illegal conduct, your PayForward use; or our representation.
+
+According to United States tax law, you are to report the fair market value of their earnings from all sources. PayForward recommends speaking to your tax advisor about how to report business income or expenses incurred in the course of receiving and providing services via the Site.
+
+If you do not agree with all of the provisions of this agreement, do not access or use this site or services.
+
+Illegal acts are still illegal even on this site. Therefore, do not initiate or enter into any illegal transcations.
+
+In summary: Treat others as you would like to be treated. We are setting up a system that rewards generosity and giving, so be kind, have fun, use common sense, and use PayForward at your own risk.</string>
+    <string name="text_didnt_receive">I didn\'t receive a text</string>
+    <string name="text_where_home">Where\'s Home?</string>
+    <string name="hint_enter_address">Enter Address</string>
+    <string name="button_current_loc">Use Current Location</string>
 </resources>
