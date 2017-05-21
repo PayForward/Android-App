@@ -57,6 +57,7 @@
 
     <style name="Float_Button_board">
         <item name="android:src">@drawable/whitearrow_on_float_button</item>
+        <item name="android:color">@color/active_icon</item>
         <item name="android:layout_gravity">bottom</item>
         <item name="android:clickable">true</item>
         <item name="android:layout_alignParentBottom">true</item>
