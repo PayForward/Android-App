@@ -68,8 +68,7 @@
         android:background="@color/input_background"
         android:hint="@string/hint_email"
         android:inputType="textEmailAddress"
-        android:maxLines="1"
-        android:textColor="@color/white" />
+        android:maxLines="1" />
 
     <EditText
         android:id="@+id/editText2"
