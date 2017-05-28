@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 
 import com.payforward.androidapp.R;
-import com.payforward.androidapp.onboard.createAccountActivity;
 
 public class TermsActivity extends AppCompatActivity {
     private ProgressBar progress;
@@ -32,7 +31,7 @@ public class TermsActivity extends AppCompatActivity {
 
     public void newActivity(View view)
     {
-        Intent intent = new Intent(this, createAccountActivity.class);
+        Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
     }
 }

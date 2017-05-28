@@ -25,7 +25,7 @@
         <activity
             android:name=".onboard.TermsActivity"
             android:label="@string/title_activity_name_board" />
-        <activity android:name=".onboard.createAccountActivity" />
+        <activity android:name=".onboard.CreateAccountActivity" />
         <activity android:name=".onboard.VerifyMemberActivity" />
         <activity android:name=".onboard.VerificationCodeActivity" />
         <activity android:name=".onboard.UploadPhotoActivity" />

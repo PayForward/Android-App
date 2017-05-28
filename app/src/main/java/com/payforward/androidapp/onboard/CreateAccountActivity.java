@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.payforward.androidapp.R;
 
-public class createAccountActivity extends AppCompatActivity {
+public class CreateAccountActivity extends AppCompatActivity {
     private ProgressDialog progress;
 
     @Override
