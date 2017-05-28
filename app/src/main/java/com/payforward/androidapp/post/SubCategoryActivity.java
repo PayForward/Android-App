@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +15,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.payforward.androidapp.R;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 import static com.payforward.androidapp.R.layout.subcategory;
 
@@ -25,12 +32,15 @@ public class SubCategoryActivity extends AppCompatActivity {
     private CustomAdapter<SubCategory> mAdapter;
     private ListView mSubCategoryList;
     private ArrayList<SubCategory> subcategoryList;
+    private DatabaseReference mDatabase;
+    private final String TAG = "SubCategoryActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_category);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference();
         mSubCategoryList = (ListView) findViewById(R.id.subcategory_list_view);
 
         mSubCategoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -42,19 +52,21 @@ public class SubCategoryActivity extends AppCompatActivity {
         });
 
         subcategoryList = new ArrayList<>();
+        DatabaseReference ref = mDatabase.child("subcategories");
 
-        subcategoryList.add(new SubCategory("What's up?"));
-        subcategoryList.add(new SubCategory("Hello!"));
-        subcategoryList.add(new SubCategory("Hello2!"));
-        subcategoryList.add(new SubCategory("Hello World!"));
-        subcategoryList.add(new SubCategory("What's cracking?"));
-        subcategoryList.add(new SubCategory("Hell no"));
-        subcategoryList.add(new SubCategory("Blah!"));
-        subcategoryList.add(new SubCategory("Blah Blah"));
-        subcategoryList.add(new SubCategory("Blah Blah Blah"));
-        subcategoryList.add(new SubCategory("Halb"));
-        subcategoryList.add(new SubCategory("Halb halb"));
-        subcategoryList.add(new SubCategory("Halb halb blah"));
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    subcategoryList.add(new SubCategory((String) snapshot.getValue()));
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.d(TAG, "Something went wrong");
+            }
+        });
 
         updateUI();
     }
