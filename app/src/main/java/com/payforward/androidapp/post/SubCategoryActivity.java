@@ -60,6 +60,8 @@ public class SubCategoryActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     subcategoryList.add(new SubCategory((String) snapshot.getValue()));
                 }
+
+                updateUI();
             }
 
             @Override
@@ -68,7 +70,6 @@ public class SubCategoryActivity extends AppCompatActivity {
             }
         });
 
-        updateUI();
     }
 
     private void updateUI() {

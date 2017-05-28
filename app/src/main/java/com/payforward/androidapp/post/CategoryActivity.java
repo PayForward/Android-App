@@ -62,6 +62,8 @@ public class CategoryActivity extends AppCompatActivity {
                     Map<String, Object> newCategory = (Map<String, Object>) snapshot.getValue();
                     categoryList.add(new Category((String) newCategory.get("title"), (String) newCategory.get("subTitle")));
                 }
+
+                updateUI();
             }
 
             @Override
@@ -69,19 +71,15 @@ public class CategoryActivity extends AppCompatActivity {
 
             }
         });
-
-        updateUI();
     }
 
     private void updateUI() {
         if (mAdapter == null) {
-            Log.d(TAG, "A");
             mAdapter = new CustomAdapter<>(this,
                     category, // What view to use for the items
                     categoryList); // Where to get the data
             mCategoryList.setAdapter(mAdapter);
         } else {
-            Log.d(TAG, "B");
             mAdapter.clear();
             mAdapter.addAll(categoryList);
             mAdapter.notifyDataSetChanged();
@@ -103,6 +101,7 @@ public class CategoryActivity extends AppCompatActivity {
         @Override
         @NonNull
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+            Log.d(TAG, "getView!");
             ViewHolder holder;
             if (convertView == null) {
                 holder = new ViewHolder();
