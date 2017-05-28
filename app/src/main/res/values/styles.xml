@@ -26,7 +26,7 @@
 
     </style>
 
-    <style name="PostHelperText">
+    <style name="PostTitleText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text</item>
@@ -37,7 +37,7 @@
         <item name="android:layout_centerHorizontal">true</item>
     </style>
 
-    <style name="PostHeaderText">
+    <style name="PostHelperText">
         <item name="android:textColor">@color/text</item>
         <item name="android:textSize">18sp</item>
         <item name="android:layout_marginTop">15dp</item>

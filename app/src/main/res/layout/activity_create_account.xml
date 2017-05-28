@@ -18,27 +18,27 @@
         android:layout_marginTop="16dp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/progressBar4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
+        style="@style/PostTitleText"
         android:text="@string/text_createaccount"
-        android:textSize="30dp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView8"
+        android:layout_below="@+id/titleText"
         android:layout_marginTop="30dp"
         android:background="@color/fb_blue"
         android:drawableLeft="@drawable/fblogo"
-        android:gravity="left|center_vertical"
+        android:drawableStart="@drawable/fblogo"
+        android:gravity="start|center_vertical"
         android:minHeight="65dp"
         android:minWidth="350dp"
         android:text="@string/button_login_fb"
@@ -48,7 +48,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/facebook"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
         android:text="@string/text_or"

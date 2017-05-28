@@ -18,7 +18,7 @@
         android:layout_marginTop="16dp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/titleText"
         android:textStyle="bold"
         android:textSize="30dp"
         android:gravity="center"
@@ -39,7 +39,7 @@
         android:inputType="phone"
         android:id="@+id/editText"
         android:layout_marginTop="25dp"
-        android:layout_below="@+id/textView8"
+        android:layout_below="@+id/titleText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

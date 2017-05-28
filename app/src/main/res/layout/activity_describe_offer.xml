@@ -22,14 +22,14 @@
 
     <TextView
         android:id="@+id/textView6"
-        style="@style/PostHelperText"
+        style="@style/PostTitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/progressBar"
         android:text="Describe your Offer" />
 
     <TextView
-        style="@style/PostHeaderText"
+        style="@style/PostHelperText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView6"
