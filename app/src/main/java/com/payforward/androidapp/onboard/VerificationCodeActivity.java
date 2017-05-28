@@ -1,11 +1,13 @@
-package com.payforward.androidapp;
+package com.payforward.androidapp.onboard;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class verificationCodeActivity extends AppCompatActivity {
+import com.payforward.androidapp.R;
+
+public class VerificationCodeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

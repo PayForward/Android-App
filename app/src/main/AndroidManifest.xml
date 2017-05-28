@@ -11,7 +11,7 @@
         <activity
             android:name=".SetLocationActivity"
             android:label="@string/title_activity_set_location" />
-        <activity android:name=".DescriptionActivity" />
+        <activity android:name=".onboard.DescriptionActivity" />
         <activity android:name=".post.PostTypeActivity" />
         <activity android:name=".post.CategoryActivity">
             <intent-filter>
@@ -21,16 +21,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".post.SubCategoryActivity" />
-        <activity android:name=".NameBoardActivity" />
+        <activity android:name=".onboard.NameBoardActivity" />
         <activity
-            android:name=".termsActivity"
+            android:name=".onboard.TermsActivity"
             android:label="@string/title_activity_name_board" />
-        <activity android:name=".createAccountActivity" />
-        <activity android:name=".verifyMemberActivity" />
-        <activity android:name=".verificationCodeActivity" />
-        <activity android:name=".UploadPhotoActivity" />
+        <activity android:name=".onboard.createAccountActivity" />
+        <activity android:name=".onboard.VerifyMemberActivity" />
+        <activity android:name=".onboard.VerificationCodeActivity" />
+        <activity android:name=".onboard.UploadPhotoActivity" />
         <activity android:name=".post.DescribeOfferActivity" />
-        <activity android:name=".whereHomeActivity">
+        <activity android:name=".onboard.WhereHomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

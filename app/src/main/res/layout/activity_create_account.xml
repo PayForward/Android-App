@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    tools:context="com.payforward.androidapp.createAccountActivity">
+    tools:context="com.payforward.androidapp.onboard.createAccountActivity">
 
     <ProgressBar
         android:id="@+id/progressBar4"

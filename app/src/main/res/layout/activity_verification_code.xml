@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    tools:context="com.payforward.androidapp.verificationCodeActivity">
+    tools:context="com.payforward.androidapp.onboard.VerificationCodeActivity">
 
     <ProgressBar
         android:id="@+id/progressBar6"
