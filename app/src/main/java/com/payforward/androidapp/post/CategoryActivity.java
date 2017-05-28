@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,11 +75,13 @@ public class CategoryActivity extends AppCompatActivity {
 
     private void updateUI() {
         if (mAdapter == null) {
+            Log.d(TAG, "A");
             mAdapter = new CustomAdapter<>(this,
                     category, // What view to use for the items
                     categoryList); // Where to get the data
             mCategoryList.setAdapter(mAdapter);
         } else {
+            Log.d(TAG, "B");
             mAdapter.clear();
             mAdapter.addAll(categoryList);
             mAdapter.notifyDataSetChanged();
