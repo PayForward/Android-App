@@ -76,4 +76,10 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
     <string name="text_where_home">Where\'s Home?</string>
     <string name="hint_enter_address">Enter Address</string>
     <string name="button_current_loc">Use Current Location</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="choose_com">Choose a Community</string>
+    <string name="title_com">SLOcals Only</string>
+    <string name="type_com"><i>Public Group with 23,291 Members</i></string>
+    <string name="com_descr">If you live in San Luis Obispo, CA, join us! Local businesses and locals only. Enjoy discounts at your favorite spots and connect with others who call SLO home.</string>
+    <string name="button_com_join">Join this Community</string>
 </resources>
