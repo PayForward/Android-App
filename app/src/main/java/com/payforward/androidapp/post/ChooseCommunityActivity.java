@@ -4,12 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
-import android.os.Bundle;
+
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,12 +23,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.payforward.androidapp.R;
-import com.payforward.androidapp.termsActivity;
+import com.payforward.androidapp.onboard.TermsActivity;
 
 import java.util.ArrayList;
 import java.util.Map;
 
-import static com.payforward.androidapp.R.layout.category;
 import static com.payforward.androidapp.R.layout.community;
 
 public class ChooseCommunityActivity extends AppCompatActivity {
@@ -39,7 +36,7 @@ public class ChooseCommunityActivity extends AppCompatActivity {
     private ListView mCommunityList;
     private ArrayList<Community> communityList;
     private DatabaseReference mDatabase;
-    private final String TAG = "ChooseCommunityActivity";
+//    private final String TAG = "ChooseCommunityActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,13 +46,13 @@ public class ChooseCommunityActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mCommunityList = (ListView) findViewById(R.id.community_list_view);
 
-        mCommunityList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                // mAdapter.getItem(i) gets the Category at the current position
-                startActivity(new Intent(ChooseCommunityActivity.this, termsActivity.class));
-            }
-        });
+//        mCommunityList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                // mAdapter.getItem(i) gets the Category at the current position
+//                startActivity(new Intent(ChooseCommunityActivity.this, TermsActivity.class));
+//            }
+//        });
         communityList = new ArrayList<>();
         DatabaseReference ref = mDatabase.child("communities");
 
@@ -64,7 +61,7 @@ public class ChooseCommunityActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Map<String, Object> newCommunity = (Map<String, Object>) snapshot.getValue();
-                    communityList.add(new Community((String) newCommunity.get("name"), (int) newCommunity.get("memberCount"), (String) newCommunity.get("description")));
+                    communityList.add(new Community((String) newCommunity.get("name"), ((Long)newCommunity.get("memberCount")).intValue(), (String) newCommunity.get("description")));
                 }
                 updateUI();
             }
@@ -89,6 +86,11 @@ public class ChooseCommunityActivity extends AppCompatActivity {
             mAdapter.notifyDataSetChanged();
         }
     }
+    public void newActivity(View view)
+    {
+        Intent intent = new Intent(this, TermsActivity.class);
+        startActivity(intent);
+    }
     private class CustomAdapter<T> extends ArrayAdapter<T> {
         // Instance variable
         ArrayList<T> objects;
@@ -104,26 +106,30 @@ public class ChooseCommunityActivity extends AppCompatActivity {
         @Override
         @NonNull
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-            CategoryActivity.CustomAdapter.ViewHolder holder;
+            ViewHolder holder;
             if (convertView == null) {
-                holder = new CategoryActivity.CustomAdapter.ViewHolder();
-                convertView = inflater.inflate(category, parent, false);
+                holder = new ViewHolder();
+                convertView = inflater.inflate(community, parent, false);
                 holder.title = (TextView) convertView.findViewById(R.id.title);
-                holder.subTitle = (TextView) convertView.findViewById(R.id.subTitle);
+                holder.comDesc = (TextView) convertView.findViewById(R.id.com_desc);
+                holder.comSubDesc = (TextView) convertView.findViewById(R.id.com_sub_desc);
                 holder.image = (ImageView) convertView.findViewById(R.id.image);
                 convertView.setTag(holder);
             } else {
-                holder = (CategoryActivity.CustomAdapter.ViewHolder) convertView.getTag();
+                holder = (ViewHolder) convertView.getTag();
             }
-            holder.title.setText(((Category) objects.get(position)).getTitle());
-            holder.subTitle.setText(((Category) objects.get(position)).getSubTitle());
-            holder.image.setImageDrawable(((Category) objects.get(position)).getImage());
+            holder.title.setText(((Community) objects.get(position)).getTitle());
+            int numMembers = ((Community) objects.get(position)).getNumberMembers();
+            String subd = "Public Group with " + Integer.toString(numMembers) + " Members";
+            holder.comSubDesc.setText(subd);
+            holder.comDesc.setText(((Community) objects.get(position)).getCommunityDescription());
+            holder.image.setImageDrawable(((Community) objects.get(position)).getImage());
 
             return convertView;
         }
 
         private class ViewHolder {
-            private TextView title, subTitle;
+            private TextView title, comDesc, comSubDesc;
             private ImageView image;
         }
     }
