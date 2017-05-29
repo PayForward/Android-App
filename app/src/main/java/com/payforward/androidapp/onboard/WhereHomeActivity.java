@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.payforward.androidapp.R;
+import com.payforward.androidapp.post.ChooseCommunityActivity;
 
 public class WhereHomeActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class WhereHomeActivity extends AppCompatActivity {
     }
     public void newActivity(View view)
     {
-        Intent intent = new Intent(this, TermsActivity.class);
+        Intent intent = new Intent(this, ChooseCommunityActivity.class);
         startActivity(intent);
     }
 }

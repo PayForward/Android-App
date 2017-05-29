@@ -21,7 +21,7 @@ public class Community implements CommunityInterface{
         this.image = image;
     }
 
-    public Community(String title, int members, String comData) {
+    public Community(String title, int members, String comDesc) {
         this.title = title;
         this.comDesc = comDesc;
         this.members = members;
