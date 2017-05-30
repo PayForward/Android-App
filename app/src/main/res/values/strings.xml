@@ -82,4 +82,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
     <string name="type_com"><i>Public Group with 23,291 Members</i></string>
     <string name="com_descr">If you live in San Luis Obispo, CA, join us! Local businesses and locals only. Enjoy discounts at your favorite spots and connect with others who call SLO home.</string>
     <string name="button_com_join">Join this Community</string>
+    <string name="required_error">This is required!</string>
+    <string name="invalid_email_error">This email is invalid!</string>
+    <string name="password_length_error">Must be at least 6 characters!</string>
 </resources>
