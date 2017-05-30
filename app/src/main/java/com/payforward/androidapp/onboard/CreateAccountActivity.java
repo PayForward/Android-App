@@ -21,7 +21,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.payforward.androidapp.R;
 
 public class CreateAccountActivity extends AppCompatActivity {
-    private ProgressDialog progress;
     private EditText mEmail;
     private EditText mPassword;
     private FirebaseAuth mAuth;
@@ -33,7 +32,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_account);
 
         // Set progress bar
-        progress = new ProgressDialog(this);
+        ProgressDialog progress = new ProgressDialog(this);
         progress.setProgress(10);
 
         // Set EditTexts
@@ -110,7 +109,8 @@ public class CreateAccountActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
-                                FirebaseUser user = mAuth.getCurrentUser();
+                                // TODO: Implement this
+                                // FirebaseUser user = mAuth.getCurrentUser();
                                 // updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.
