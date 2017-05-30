@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/select_category" />
 
+    <!-- TODO: Change to RecyvlerView -->
     <ListView
         android:id="@+id/category_list_view"
         android:layout_marginTop="30dp"
