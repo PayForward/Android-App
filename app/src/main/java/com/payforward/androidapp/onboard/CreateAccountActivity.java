@@ -26,7 +26,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     private EditText mPassword;
     private FirebaseAuth mAuth;
     private final String TAG = "CreateAccountActivity";
-
+    private View v;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +55,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     }
 
     @Override
+
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -111,6 +112,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
                                 // TODO: Implement this
+                                newActivity(v);
                                 // FirebaseUser user = mAuth.getCurrentUser();
                                 // updateUI(user);
                                 startActivity(new Intent(CreateAccountActivity.this, VerifyMemberActivity.class));
@@ -125,6 +127,11 @@ public class CreateAccountActivity extends AppCompatActivity {
                         }
                     });
         }
+    }
+    public void newActivity(View view)
+    {
+        Intent intent = new Intent(this, VerifyMemberActivity.class);
+        startActivity(intent);
     }
 
     public void fabClicked(View view) {
