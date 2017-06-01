@@ -112,7 +112,6 @@ public class CreateAccountActivity extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
                                 // TODO: Implement this
-                                newActivity(v);
                                 // FirebaseUser user = mAuth.getCurrentUser();
                                 // updateUI(user);
                                 startActivity(new Intent(CreateAccountActivity.this, VerifyMemberActivity.class));
@@ -127,11 +126,6 @@ public class CreateAccountActivity extends AppCompatActivity {
                         }
                     });
         }
-    }
-    public void newActivity(View view)
-    {
-        Intent intent = new Intent(this, VerifyMemberActivity.class);
-        startActivity(intent);
     }
 
     public void fabClicked(View view) {
