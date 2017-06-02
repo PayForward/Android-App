@@ -117,7 +117,9 @@ public class CreateAccountActivity extends AppCompatActivity {
                                 newActivity(v);
                                 // FirebaseUser user = mAuth.getCurrentUser();
                                 // updateUI(user);
+                                startActivity(new Intent(CreateAccountActivity.this, VerifyMemberActivity.class));
                             } else {
+                                // TODO: Need logic for already signed-up user
                                 // If sign in fails, display a message to the user.
                                 Log.d(TAG, "createUserWithEmail:failure", task.getException());
                                 Toast.makeText(CreateAccountActivity.this, task.getException().getMessage(),
