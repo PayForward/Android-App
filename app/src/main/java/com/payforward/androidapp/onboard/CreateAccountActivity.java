@@ -11,6 +11,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,14 +28,15 @@ public class CreateAccountActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private final String TAG = "CreateAccountActivity";
     private View v;
+    private ProgressBar mProgress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
         // Set progress bar
-        ProgressDialog progress = new ProgressDialog(this);
-        progress.setProgress(10);
+        mProgress = (ProgressBar) findViewById(R.id.progressBar4);
+        mProgress.setProgress(20);
 
         // Set EditTexts
         mEmail = (EditText) findViewById(R.id.email);

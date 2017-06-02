@@ -9,7 +9,7 @@
     tools:context="com.payforward.androidapp.onboard.NameBoardActivity">
 
     <ProgressBar
-        android:id="@+id/progressBar3"
+        android:id="@+id/progressBar7"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

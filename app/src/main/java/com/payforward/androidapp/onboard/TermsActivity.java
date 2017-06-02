@@ -10,14 +10,14 @@ import android.widget.ProgressBar;
 import com.payforward.androidapp.R;
 
 public class TermsActivity extends AppCompatActivity {
-    private ProgressBar progress;
+    private ProgressBar mProgress;
     private Button accept;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terms);
-        progress = new ProgressBar(this);
-        progress.setProgress(10);
+        mProgress = (ProgressBar) findViewById(R.id.progressBar3);
+        mProgress.setProgress(15);
         accept = (Button) findViewById(R.id.acceptance);
         accept.setOnClickListener(
                 new View.OnClickListener() {

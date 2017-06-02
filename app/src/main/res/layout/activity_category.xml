@@ -11,22 +11,27 @@
         style="@style/PostTitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/select_category" />
+        android:text="@string/select_category"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true" />
 
     <!-- TODO: Change to RecyvlerView -->
     <ListView
         android:id="@+id/category_list_view"
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/select_category"
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp"
         android:paddingEnd="30dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:paddingStart="30dp">
+        android:paddingStart="30dp"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/select_category"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
     </ListView>
+
 
 </RelativeLayout>

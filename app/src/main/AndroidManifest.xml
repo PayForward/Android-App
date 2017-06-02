@@ -20,18 +20,16 @@
         <activity
             android:name=".onboard.TermsActivity"
             android:label="@string/title_activity_name_board" />
-        <activity android:name=".onboard.CreateAccountActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".onboard.CreateAccountActivity"/>
         <activity android:name=".onboard.VerifyMemberActivity" />
         <activity android:name=".onboard.VerificationCodeActivity" />
         <activity android:name=".onboard.UploadPhotoActivity" />
         <activity android:name=".post.DescribeOfferActivity" />
         <activity android:name=".onboard.WhereHomeActivity">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".post.ChooseCommunityActivity"/>
     </application>

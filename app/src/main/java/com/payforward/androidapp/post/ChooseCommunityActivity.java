@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -22,6 +23,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.payforward.androidapp.R;
 import com.payforward.androidapp.onboard.TermsActivity;
 
@@ -31,7 +34,7 @@ import java.util.Map;
 import static com.payforward.androidapp.R.layout.community;
 
 public class ChooseCommunityActivity extends AppCompatActivity {
-
+    private ProgressBar mProgress;
     private CustomAdapter<Community> mAdapter;
     private ListView mCommunityList;
     private ArrayList<Community> communityList;
@@ -42,7 +45,11 @@ public class ChooseCommunityActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_community);
-
+        mProgress = (ProgressBar) findViewById(R.id.progressBar2);
+        mProgress.setProgress(10);
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReference();
+        StorageReference imagesRef = storageRef.child("categories");
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mCommunityList = (ListView) findViewById(R.id.community_list_view);
 
