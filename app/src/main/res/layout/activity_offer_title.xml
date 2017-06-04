@@ -28,6 +28,7 @@
 
     <EditText
         style="@style/Input_board"
+        android:inputType="textCapWords"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:hint="@string/hint_title"

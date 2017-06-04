@@ -15,11 +15,11 @@
 
         <activity android:name=".post.PostTypeActivity" />
         <activity android:name=".post.CategoryActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".post.SubCategoryActivity" />
         <activity android:name=".onboard.NameBoardActivity" />
@@ -33,13 +33,19 @@
         <activity android:name=".post.DescribeOfferActivity" />
         <activity android:name=".onboard.WhereHomeActivity" />
         <activity android:name=".post.ChooseCommunityActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
-        <activity android:name=".post.offerTitleActivity"></activity>
+        <activity android:name=".post.offerTitleActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
     </application>
 
 </manifest>
