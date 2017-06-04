@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.payforward.androidapp.post.SubCategoryActivity">
 
     <TextView
@@ -27,5 +28,15 @@
         android:paddingStart="30dp">
 
     </ListView>
+    <android.support.design.widget.FloatingActionButton
+        style="@style/Float_Button_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="newActivity"
+        android:layout_below="@id/subcategory_list_view">
+    </android.support.design.widget.FloatingActionButton>
 
 </RelativeLayout>
