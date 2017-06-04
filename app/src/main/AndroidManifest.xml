@@ -11,7 +11,12 @@
         <activity
             android:name=".SetLocationActivity"
             android:label="@string/title_activity_set_location" />
-        <activity android:name=".onboard.DescriptionActivity" />
+        <activity android:name=".onboard.DescriptionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".post.PostTypeActivity" />
         <activity android:name=".post.CategoryActivity">
         </activity>
@@ -25,12 +30,7 @@
         <activity android:name=".onboard.VerificationCodeActivity" />
         <activity android:name=".onboard.UploadPhotoActivity" />
         <activity android:name=".post.DescribeOfferActivity" />
-        <activity android:name=".onboard.WhereHomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".onboard.WhereHomeActivity"/>
         <activity android:name=".post.ChooseCommunityActivity"/>
     </application>
 

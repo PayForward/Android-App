@@ -71,4 +71,14 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
     </android.support.design.widget.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4" />
 </RelativeLayout>
