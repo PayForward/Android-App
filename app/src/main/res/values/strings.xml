@@ -87,4 +87,5 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
     <string name="password_length_error">Must be at least 6 characters!</string>
     <string name="offer_text_title">Give your Offer a Title</string>
     <string name="hint_title">Title</string>
+    <string name="tit_desc_offer">Describe your Offer</string>
 </resources>
