@@ -1,6 +1,7 @@
 package com.payforward.androidapp.post;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -22,6 +23,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.payforward.androidapp.R;
+import com.payforward.androidapp.onboard.TermsActivity;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -125,5 +127,10 @@ public class SubCategoryActivity extends AppCompatActivity {
         private class ViewHolder {
             private TextView title;
         }
+    }
+    public void newActivity(View view)
+    {
+        Intent intent = new Intent(this, offerTitleActivity.class);
+        startActivity(intent);
     }
 }

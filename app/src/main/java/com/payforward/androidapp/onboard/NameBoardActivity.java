@@ -9,14 +9,14 @@ import android.widget.ProgressBar;
 import com.payforward.androidapp.R;
 
 public class NameBoardActivity extends AppCompatActivity {
-    private ProgressBar progress;
+    private ProgressBar mProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name_board);
-        progress = new ProgressBar(this);
-        progress.setProgress(50);
+        mProgress = (ProgressBar) findViewById(R.id.progressBar7);
+        mProgress.setProgress(35);
 
     }
     public void newActivity(View view)

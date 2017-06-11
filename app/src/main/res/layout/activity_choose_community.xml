@@ -9,7 +9,7 @@
     tools:context="com.payforward.androidapp.post.ChooseCommunityActivity">
 
     <ProgressBar
-        android:id="@+id/progressBar4"
+        android:id="@+id/progressBar2"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/choose_com"
-        android:layout_below="@+id/progressBar4"
+        android:layout_below="@+id/progressBar2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
         android:textSize="30dp"

@@ -6,10 +6,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    tools:context="com.payforward.androidapp.onboard.NameBoardActivity">
-
+    tools:context="com.payforward.androidapp.post.offerTitleActivity">
     <ProgressBar
-        android:id="@+id/progressBar7"
+        android:id="@+id/progressBar10"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,29 +22,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="51dp"
-        android:text="@string/sign_up_name_helper"
+        android:text="@string/offer_text_title"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <EditText
         style="@style/Input_board"
+        android:inputType="textCapWords"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:hint="@string/sign_up_first_name"
+        android:hint="@string/hint_title"
         android:maxLines="1"
         android:layout_marginTop="28dp"
         android:id="@+id/email"
         android:layout_below="@+id/textView6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <EditText
-        style="@style/Input_board"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:hint="@string/sign_up_last_name"
-        android:maxLines="1"
-        android:layout_marginTop="37dp"
-        android:layout_below="@+id/email"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -60,6 +50,3 @@
     </android.support.design.widget.FloatingActionButton>
 
 </RelativeLayout>
-
-
-
