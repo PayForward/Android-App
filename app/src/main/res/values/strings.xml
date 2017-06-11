@@ -61,7 +61,7 @@ All transactions are between the parties using PayForward. PayForward is not inv
 
 Services provided through PayForward are not guaranteed, warranted or insured. PayForward does not do background checks or verify licenses.
 
-Many jurisdictions have law protecting consumers and other contract parties, limiting their ability to waive certain rights and responsibilities. We respect such laws; nothing herein shall waive rights or responsiblities that cannot be waived.
+Many jurisdictions have law protecting consumers and other contract parties, limiting their ability to waive certain rights and responsibilities. We respect such laws; nothing herein shall waive rights or responsibilities that cannot be waived.
 
 We are not liable for any harm resulting from user content, user conduct, e.g. illegal conduct, your PayForward use; or our representation.
 
@@ -85,4 +85,9 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
     <string name="required_error">This is required!</string>
     <string name="invalid_email_error">This email is invalid!</string>
     <string name="password_length_error">Must be at least 6 characters!</string>
+
+    <!-- Strings for Facebook login -->
+    <string name="facebook_app_id">1900026713578014</string>
+    <string name="fb_login_protocol_scheme">fb1900026713578014</string>
+
 </resources>
