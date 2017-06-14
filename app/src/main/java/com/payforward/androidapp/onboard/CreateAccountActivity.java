@@ -19,18 +19,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.payforward.androidapp.R;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
 
 public class CreateAccountActivity extends AppCompatActivity {
     private EditText mEmail;
     private EditText mPassword;
     private FirebaseAuth mAuth;
     private final String TAG = "CreateAccountActivity";
-
+    private View v;
     private ProgressBar mProgress;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,6 +114,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
                                 // TODO: Implement this
+                                newActivity(v);
                                 // FirebaseUser user = mAuth.getCurrentUser();
                                 // updateUI(user);
                                 startActivity(new Intent(CreateAccountActivity.this, VerifyMemberActivity.class));
@@ -130,6 +129,11 @@ public class CreateAccountActivity extends AppCompatActivity {
                         }
                     });
         }
+    }
+    public void newActivity(View view)
+    {
+        Intent intent = new Intent(this, VerifyMemberActivity.class);
+        startActivity(intent);
     }
 
     public void fabClicked(View view) {
