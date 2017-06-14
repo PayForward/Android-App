@@ -1,0 +1,7 @@
+#Sun Jun 11 13:18:33 PDT 2017
+base.0=C\:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_fb43d98507cb7e5654fb7e697477ec78aa64e57d
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_77db3dd2571f0a805dd1e2a478fe4a9ca3ac91c4\\classes.dex
+base.1=C\:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_77db3dd2571f0a805dd1e2a478fe4a9ca3ac91c4
+file.0=C\:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_fb43d98507cb7e5654fb7e697477ec78aa64e57d\\classes.dex

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">853769183318-76j4h42kib7ca6vvvhiqguu4bmijp6rn.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://payitforward-781cb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">853769183318</string>
+    <string name="google_api_key" translatable="false">AIzaSyA_WoEdWFMj8d925RUsAogwkYyXl7WUcXY</string>
+    <string name="google_app_id" translatable="false">1:853769183318:android:7b28d1ec47dc2188</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA_WoEdWFMj8d925RUsAogwkYyXl7WUcXY</string>
+    <string name="google_storage_bucket" translatable="false">payitforward-781cb.appspot.com</string>
+</resources>

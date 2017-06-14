@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_cae6463aad81e4e3a14bdde204305e1ce19a5719\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\a8e80ee024f63a8b9d102316ff5d3e5fb3b71dd9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3dbaff65d26258306561d545f88d6712ac41dd46">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5592a1ec8b3736d2f3ef85e61c0bad67741e16d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\6862bec50e80aacc84b5032ef90886b20aa40aab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8f83a631abfdb790591a720e0cfb5f41329831c3">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_38a0e0884e59697073e0b53241cb63e46e7566ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\3a15c354355e4f13dcc70649ef25b2ed1002b684\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5c1f80f62ccad560edcd6609fc75f385cf7cb45a">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_11e98aba30e4fad39c41ce1a72c32771387d3535\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\cc80d861008932c3627340b8444487a1d5d2d98a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_78c43e3babd7e273d5d5d0bb9f8458929e5e569a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\48f70b217b0f5622e4cad2db1a09782aae5524d4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ba4defc8cb4ed5b90b8ef71602722cdeebe507cd">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f6eb029333e22ece95b86c1eac063af429615814\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\a014928be1b0a66a1c2dfd392a15109623af69ff\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="de24d8023e8da79f30bee46b298f606e5e758432">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e11f17619bfec32b986410c1e0e6765b6e1196e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_e8bc0bcf361e32e5541b7cb0d7439ad57c16038f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\e866af72b87d602665828e96bdafc8260a77a782\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4504ae3ec47953f3d0c324dc66996aecfb7fbb5c">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_53019f519cedccff0d8e762707b8ce710507d68e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\3e54d2da01c5d7c9c66ee9bc1fb7179e20cbb521\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da832806828ba407284c0c4b1d87b8f9ed9f2520">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_05f5d9aa8dd671ecb29985a07492b178d8faa0c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\9f94bb6028262af0e249b9c149e6e653c4d90f10\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d79c575e1d97b0298746a4c032a0c1dc201c2f82">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdb30935083296fec46cb1975dc895b4f10cd7f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\0a7f44ef360a4ff24001e280d8490761ffc08fe6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c4ba6d53176502b2672a5d7d25a0000d1a6e701c">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a0f6293597bc42f8be37fb275a531364298f3348\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\ab320c6c45c9e35083cd45bb297b4a800e115673\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_06eea4ee7e5b1bc9c382857359fe9cb99d0253e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\dfac19501911be2cc7a1508c214affaeb1b16833\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_065da9ad06b1cd9269d8d0c5862ccb85265e1dce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\8fc34b6eaadbeeb494e3654cfdfb8a52650d8aee\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d4ed3c0621686c4ea85b6a8a71b37189bc6d67e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\a8ff419fd2c37752ed5e49ea9f2d2e5f738fd605\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7ac7a76db936512fc7d6e7cd170d6ac753f8f7c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_fb43d98507cb7e5654fb7e697477ec78aa64e57d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\8d5b32b80656e068fcb66e6bd72e6f1ae5fd1c14\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0a534044236cf81b002604643d23e7ca56bd1ee0">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c6a643c0131cfd8bffafcc5b0d8c1edef51d318d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9882034727a19b86040fde0828117b359c9d7fcf">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_77db3dd2571f0a805dd1e2a478fe4a9ca3ac91c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jinch\.android\build-cache\0e71af514bb8115b5f90002871edaed2f0bd2b40\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7b3eaf755284fb08a6d616a55fbb07dc3917d5e7">
+        <dex dex="C:\Users\jinch\OneDrive\Documents\PayItForward\Android-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_636699723694d8a995483092480f5eddb324bdad\classes.dex" />
+    </item>
+
+</items>

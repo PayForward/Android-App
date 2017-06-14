@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\jinch\\.android\\build-cache\\896d66ebab8199cece01727c1faa6dbf46833203\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\jinch\\.android\\build-cache\\896d66ebab8199cece01727c1faa6dbf46833203\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\jinch\\.android\\build-cache\\896d66ebab8199cece01727c1faa6dbf46833203\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\jinch\\OneDrive\\Documents\\PayItForward\\Android-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\jinch\\.android\\build-cache\\896d66ebab8199cece01727c1faa6dbf46833203\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    }
+]

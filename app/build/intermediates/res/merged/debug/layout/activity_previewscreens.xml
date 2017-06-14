@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.payforward.androidapp.onboard.PreviewScreensActivity">
+    android:id="@id/root_layout"
+    <!--<fragment-->
+        <!--class="com.payforward.androidapp.onboard.IntroPageFragment"-->
+        <!--android:id="@+id/preview_fragment"-->
+        <!--android:layout_height="439dp"-->
+        <!--android:layout_width="0dp" />-->
+
+    <!--<include layout="@layout/content_previewscreens" />-->
+
+    <fragment
+        android:id="@+id/preview_fragment"
+        android:name="com.payforward.androidapp.onboard.IntroPageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_intro_page" />
+    <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--tools:layout="@layout/fragment_intro_page" />-->
+
+</LinearLayout>
